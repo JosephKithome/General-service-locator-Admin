@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:drawableTop="@drawable/ic_people_black_24dp"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:hint="email"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:textColorHint="@color/fbutton_color_nephritis"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/mail"
+            android:drawableStart="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:layout_height="match_parent"
+
+            android:drawableLeft="@drawable/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:hint="password"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:textColorHint="@color/fbutton_color_nephritis"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:drawableStart="@drawable/password"
+            android:inputType="numberPassword"
+            android:layout_height="match_parent"
+
+            android:drawableLeft="@drawable/password" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        android:padding="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/fbutton_color_nephritis"
+        android:id="@+id/btnLogin"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/forglogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fbutton_color_nephritis"
+        android:text="Forgot password"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/fbutton_color_nephritis"
+            android:id="@+id/newAccount"
+            android:layout_margin="0dp"
+            android:text="Create new Account"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

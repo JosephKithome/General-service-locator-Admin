@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HotelPosts">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="41dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageview"
+                android:layout_height="250dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Airport Name"
+                android:id="@+id/mTitle"
+                tools:layout_editor_absoluteX="125dp"
+                tools:layout_editor_absoluteY="260dp"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                tools:ignore="MissingConstraints" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:background="@drawable/input_outline"
+                android:padding="15dp"
+                android:hint="Description"
+                android:id="@+id/mDescription"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="checkin"
+                android:id="@+id/checkin"
+                android:padding="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="checkout"
+                android:id="@+id/checkout"
+                android:padding="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="location"
+                android:id="@+id/location"
+                android:padding="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="latitude"
+                android:id="@+id/latitude"
+                android:padding="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="longitude"
+                android:id="@+id/longitude"
+                android:padding="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="amenities"
+                android:id="@+id/amenities"
+                android:padding="15dp"/>
+
+
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/buttongstylegreen"
+                android:text="submit"
+                android:padding="15dp"
+
+                android:textColor="@color/fbutton_color_clouds"
+                android:layout_height="wrap_content"
+                android:id="@+id/Msubmit"
+
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
